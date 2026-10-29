@@ -13,3 +13,8 @@ def test_greet_removes_extra_spaces():
 def test_greet_rejects_empty_name():
     with pytest.raises(ValueError):
         greet("   ")
+from src.app import goodbye
+
+
+def test_goodbye():
+    assert goodbye("Rida") == "Goodbye, Rida!"
